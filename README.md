@@ -29,19 +29,8 @@ The application has four main routes:
 ## Screenshots
 
 Landing Page
-![Landing Page](https://drive.google.com/file/d/1t4DxA9JmQiSchKeKgY1HTjxX4F22E453/view?usp=drive_link)
+![Routes](https://imgur.com/a/atdq1wO)
 
-Signup page
-![Signup](https://drive.google.com/file/d/1p41fdQjyktn84StcMyu73ZbIi1XOz6vx/view?usp=drive_link)
-
-Login page
-![Login](https://drive.google.com/file/d/1negISbGFlQD477RdgjZnQahBhZO6VuJf/view?usp=drive_link)
-
-Homepage
-![Homepage](https://drive.google.com/file/d/1VEZUxmjD2B9-NlNBURstzD9FfpXdxhzm/view?usp=drive_link)
-
-Candidate Referral Form
-![Referral Form](https://drive.google.com/file/d/1bLp_uZDqj-EmxEMd5b-yvPuMrvPzmrh5/view?usp=drive_link)
 
 ## Responsive Design
 
