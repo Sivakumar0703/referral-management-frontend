@@ -29,8 +29,19 @@ The application has four main routes:
 ## Screenshots
 
 Landing Page
-![Routes](https://imgur.com/a/atdq1wO)
+![Landing Page](https://i.imgur.com/AzTXvtX.png)
 
+Signup page
+![Signup](https://i.imgur.com/URkEemz.png)
+
+Login page
+![Login](https://i.imgur.com/OjEemmk.png)
+
+Homepage
+![Homepage](https://i.imgur.com/ySa1Hbi.png)
+
+Candidate Referral Form
+![Referral Form](https://i.imgur.com/SC7YHJa.png)
 
 ## Responsive Design
 
