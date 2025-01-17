@@ -23,14 +23,14 @@ const Homepage = () => {
             <Navbar search={search} setSearch={setSearch}  />
         </div>
 
-        <div id='candidate-list' style={{width:'100%',justifyContent:'center'}}>
+        <div id='candidate-list'>
         {
             isLoading ? <p>Loading...</p> 
             :
             candidates.map((candidate) => {
                 return <Card key={candidate._id} candidate={candidate} />
             })
-        }
+        } 
         </div>
 
         <ReferralModal />

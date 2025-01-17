@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { saveUserData } from '../../redux/userSlice';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -112,7 +112,8 @@ const Login = () => {
                 </div>
 
                 <div>
-                 <p>If you don't have an account then <a href='/signup' style={{color:'red',fontWeight:'bold',textDecoration:'none'}}>Click Here</a> to register</p>
+                 <p>If you don't have an account then 
+                    <Link to='/signup' style={{color:'red',fontWeight:'bold',textDecoration:'none'}}> &nbsp;Click Here</Link> to register</p>
                  </div>
             </div>
 

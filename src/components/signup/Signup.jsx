@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './signup.css'
 import { toast } from 'react-toastify';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const Signup = () => {
     const[form, setForm] = useState({
         name:'',
@@ -73,11 +73,12 @@ const Signup = () => {
             </div>
 
             <div>
-                <button className='btn btn-primary' onClick={handleSignup}>SIGNUP</button>
+                <button className='btn btn-success' onClick={handleSignup}>SIGNUP</button>
             </div>
 
             <div>
-                <p>If you already have an account then <a href='/login' style={{color:'black',fontWeight:'bold',textDecoration:'none'}}>Click Here</a> to login</p>
+                <p>If you already have an account then 
+                    <Link to='/login' style={{color:'black',fontWeight:'bold',textDecoration:'none'}}> &nbsp; Click Here</Link> to login</p>
             </div>
 
         </div>
