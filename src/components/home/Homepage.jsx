@@ -1,14 +1,21 @@
-import React, { useState } from 'react'
-import { useSelector } from 'react-redux'
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import Card from '../card/Card'
 import './homepage.css'
 import Navbar from '../navbar/Navbar'
 import ReferralModal from '../modal/ReferralModal'
+import { fetchCandidates } from '../../redux/asyncThunk'
 
 const Homepage = () => {
     const {candidates,isLoading} = useSelector(state => state.candidateReducer);
-    console.log('home', candidates);
     const[search, setSearch] = useState('');
+
+   // fetch all candidate data
+   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCandidates());
+  },[]);
 
   return (
     <div>

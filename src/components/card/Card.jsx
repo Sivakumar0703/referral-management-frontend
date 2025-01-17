@@ -76,7 +76,7 @@ const Card = ({candidate}) => {
         <div className="candidate-info">
             <p className="label"> Status </p>
             {
-                isAdmin === true ?
+                isAdmin === 'true' ?
                 <select value={changeStatus} onChange={handleStatusChange}>
                 {
                     options.map((option) => {

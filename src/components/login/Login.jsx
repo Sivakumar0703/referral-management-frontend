@@ -13,10 +13,14 @@ const Login = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    async function handleLoginOnClick(){
+    async function handleLoginOnClick(isUser){
         try {
-           const response = await axios.post(`${url}/user/login`, {email,password});
-           console.log('res',response);
+            let response;
+            if(isUser === 'user'){
+                response = await axios.post(`${url}/user/login`, {email,password});
+            } else {
+                response = await axios.post(`${url}/user/login`, {email:'tamilwebdevsiva@gmail.com',password:'12345678'});
+            }
            const token = response.data.token;
            const isAdmin = response.data.isAdmin;
            sessionStorage.setItem('token', token);
@@ -33,6 +37,8 @@ const Login = () => {
             toast.error(error.response?.data.message.toUpperCase());
         }
     }
+
+    
 
   return (
     <div id='login-container'>
@@ -94,8 +100,14 @@ const Login = () => {
                 </div>
 
                 <div>
-                    <button className='btn btn-primary' onClick={handleLoginOnClick}>
+                    <button className='btn btn-primary' onClick={() => handleLoginOnClick('user')}>
                         Login
+                    </button>
+                </div>
+
+                <div>
+                    <button className='btn btn-success' onClick={() => handleLoginOnClick('admin')}>
+                        Admin
                     </button>
                 </div>
 
