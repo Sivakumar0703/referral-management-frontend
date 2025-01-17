@@ -1,0 +1,73 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.landing-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.landing-features{
+    flex:1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.landing-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.landing-header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #575757;
+}
+
+.landing-features {
+    padding: 50px 20px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 30%;
+    margin: 20px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+.landing-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

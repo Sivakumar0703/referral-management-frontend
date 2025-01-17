@@ -1,0 +1,32 @@
+
+#card{
+    display:flex;
+    flex-direction: column;
+    width:350px;
+    border:2px solid black;
+    margin:5px;
+    padding:10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    color:white;
+}
+
+.candidate-info{
+    display: flex;
+    justify-content:flex-start ;
+    align-items: baseline;
+}
+
+.label{
+    text-align: left;
+    font-weight: bold;
+    min-width:150px;
+}
+
+.value{
+    /* flex-grow: 1; */
+    text-align: left;
+    margin-left: 5px;
+    word-break: break-all;
+}
